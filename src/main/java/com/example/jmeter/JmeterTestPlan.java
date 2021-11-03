@@ -33,7 +33,7 @@ public class JmeterTestPlan {
      * in resource folder
      */
     public HashTree createTestPLan(String inputCSVFile, String domainName, String path, String httpMethod, int threadCount) throws IOException {
-        JMeterUtils.setJMeterHome("jmeter");
+        JMeterUtils.setJMeterHome("target/jmeter");
 
         //import the jmeter properties, as is provided
         JMeterUtils.loadJMeterProperties("target/jmeter/bin/jmeter.properties");
